@@ -8,4 +8,11 @@
 
 body {
   font-family: 'Poppins', sans-serif;
+
+  min-height: 100vh;
+  display: flex; /* тип отображения*/
+  justify-content: center; /* выравнивание по центру главной оси */
+  align-items: center; /* выравнивание по центру поперечной оси */
+
+  background-color: #03a9f4;
 }
