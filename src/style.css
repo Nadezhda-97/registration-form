@@ -13,19 +13,17 @@ body {
   display: flex; /* тип отображения*/
   justify-content: center; /* выравнивание по центру главной оси */
   align-items: center; /* выравнивание по центру поперечной оси */
-
-  background-color: #03a9f4;
 }
 
 .container {
-  width: 800px;
-  height: 500px;
-  padding: 40px 0; /* внутренний блок должен иметь отступы от контейнера снизу и сверху */
+  width: 500px;
+  height: 600px;
+  padding: 20px 0; /* внутренний блок должен иметь отступы от контейнера снизу и сверху */
 }
 
 .block {
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.2); /* блок станет полупрозрачным */
+  background-color: #c8e6f3;
   box-shadow: 0 5px 45px rgba(0, 0, 0, 0.5);
 
   display: flex;
@@ -38,19 +36,45 @@ body {
 }
 
 .block-item__title {
-  font-size: 1.5rem;
-  font-weight: 500;
-  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
 
+.block-item__form {
+  width: 100%;
+  padding: 20px 20px 10px 20px;
+  font-size: 16px;
+}
+
+.form-item {
   margin-bottom: 10px;
+}
+
+.form__input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #333;
+  font-size: 12px;
+
+  margin-top: 5px;
 }
 
 .form__btn {
   border: none;
   cursor: pointer;
   padding: 10px 20px; /* внутренние поля */
-  background-color: #fff;
-  color: #333;
-  font-style: 16px;
+  background-color: #03a9f4;
+  color: #fff;
+  font-size: 16px;
   font-weight: 500;
+}
+
+.form__btn:enabled:active {
+  background-color:#002ead;
+}
+
+.form__btn:disabled {
+  opacity: 0.5;
+  cursor: default;
 }
