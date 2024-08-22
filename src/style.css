@@ -88,3 +88,13 @@ body {
   opacity: 0.5;
   cursor: default;
 }
+
+/*
+.form__input:invalid {
+  border: 2px dashed red;
+}
+
+.form__input:valid {
+  border: 1px solid #333;
+}
+*/
